@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rock paper scissors game with bonus version"
+    />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/FEM-RPS-vanilla/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    
+    <script type="module" crossorigin src="/FEM-RPS-vanilla/assets/index.2355aec8.js"></script>
+    <link rel="stylesheet" href="/FEM-RPS-vanilla/assets/index.6695fb58.css">
+  </head>
+  <body>
+    <!-- game container -->
+    <div class="container">
+      <!-- score board -->
+      <header class="score-board">
+        <section class="score-board__container">
+          <h1 class="logo-container">
+            <span id="logoText" class="logo__text"></span>
+            <button id="gameTypeToggler">
+              <img id="logoImg" class="logo__img" />
+            </button>
+          </h1>
+          <section class="score-card">
+            <h2>score</h2>
+            <strong id="score"> </strong>
+          </section>
+        </section>
+      </header>
+
+      <!-- game board -->
+      <main id="gameContainer" class="show">
+        <section id="gameBoard" class="original">
+          <img
+            src="./images/bg-triangle.svg"
+            alt="board game"
+            class="game-structure triangle"
+          />
+          <img
+            src="./images/bg-pentagon.svg"
+            alt="board game"
+            class="game-structure pentagon"
+          />
+
+          <button data-hand="rock" class="game-control rock">
+            <figure>
+              <img src="./images/icon-rock.svg" alt="Rock" />
+            </figure>
+          </button>
+          <button data-hand="paper" class="game-control paper">
+            <figure>
+              <img src="./images/icon-paper.svg" alt="Paper" />
+            </figure>
+          </button>
+          <button data-hand="scissors" class="game-control scissors">
+            <figure>
+              <img src="./images/icon-scissors.svg" alt="Scissors" />
+            </figure>
+          </button>
+          <button data-hand="lizard" class="game-control lizard">
+            <figure>
+              <img src="./images/icon-lizard.svg" alt="Lizard" />
+            </figure>
+          </button>
+          <button data-hand="spock" class="game-control spock">
+            <figure>
+              <img src="./images/icon-spock.svg" alt="Spock" />
+            </figure>
+          </button>
+        </section>
+      </main>
+
+      <section id="gameResultContainer" class="hide">
+        <section class="game-result-wrapper">
+          <!-- user result -->
+          <article>
+            <div class="final-block" id="user">
+              <figure>
+                <img id="user__img" />
+              </figure>
+            </div>
+            <span class="text">you picked</span>
+          </article>
+          <!-- house result -->
+          <article>
+            <div class="final-block placeholder" id="house">
+              <figure>
+                <img id="house__img" />
+              </figure>
+            </div>
+            <span class="text">the house picked</span>
+          </article>
+          <!-- result section -->
+          <div class="resultText">
+            <h3 id="gameResult">you win</h3>
+            <button class="btn btn--primary hide" id="newGame">
+              Play again
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <!-- btn to open rules modal -->
+      <button class="btn btn--secondary" id="showRuleBtn">rules</button>
+    </div>
+
+    <!-- attribution -->
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+
+    <!-- rules modal -->
+    <dialog id="gameRuleModal">
+      <h3 class="rule-heading">rules</h3>
+      <img alt="Game rules" id="gameRuleImg" />
+
+      <form method="dialog">
+        <button>
+          <img src="./images/icon-close.svg" />
+        </button>
+      </form>
+    </dialog>
+  </body>
+</html>

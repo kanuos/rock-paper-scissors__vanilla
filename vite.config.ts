@@ -1,5 +1,5 @@
 import { defineConfig } from "vite"
 
 export default defineConfig({
-    base: "/FEM-RPS-vanilla/"
+    base: "/rock-paper-scissors__vanilla/"
 })

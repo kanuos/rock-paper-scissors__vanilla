@@ -17,7 +17,8 @@ export class Game {
     this.#___type = v;
   }
   public set score(v: number) {
-    this.#___score = Math.max(0, v);
+    // only accepts integers. Min can be negative too.
+    this.#___score = Math.round(v);
   }
   public set database(v: Storage) {
     this.#__database = v;

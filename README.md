@@ -81,8 +81,8 @@ This web-app was created using the following:
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/kanuos/rock-paper-scissors__vanilla)
+- Live Site URL: [Github Pages](https://your-live-site-url.com)
 
 
 

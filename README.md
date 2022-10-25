@@ -82,8 +82,14 @@ This web-app was created using the following:
 ## Links
 
 - Solution URL: [GitHub Repo](https://github.com/kanuos/rock-paper-scissors__vanilla)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Live Site URL: [Github Pages](https://kanuos.github.io/rock-paper-scissors__vanilla/)
 
+
+## Acknowledgement
+
+The deployment to GitHub pages using GH actions was something that I did not have much experience with. Especially, when the entire app logic was written in TypeScript and built with Vite, the process of deployment became even more complicated.
+
+Thanks to [Jordan Baron's](https://blog.codedbyjordan.com/deploying-a-vite-app-with-github-actions) blog, this process became helluva easy! :)
 
 
 ## Author
